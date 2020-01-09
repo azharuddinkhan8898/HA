@@ -68,13 +68,48 @@ img{max-width: 100%;}
 .bold{font-weight:700}
 .normal-weight{font-weight: normal;}
 .width100{width:100%}
+.light-gray-background{background-color: #f5f7f8;}
 .width50{width:50%}
 .width35{width:35%}
 .width30{width:30%}
 .white-text{color: #fff;}
+.black-text{color: #000 !important;}
 .height100{
     height: 100%;
 }
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
 header{
     background: #fff;
     height: 100px;
@@ -154,9 +189,9 @@ header{
 }
 
 .home-title{
-    margin: 40px 0px;
+    margin: 60px 0px 40px;
     color: #1b267c;
-    font-size: 26px;
+    font-size: 30px;
 }
 .blue-text{
     color: #1b267c;
@@ -193,15 +228,27 @@ header{
     margin-top: 5px;
 }
 
+.health-packages-wrapper h4{
+    font-size: 24px;
+}
+
 .health-packages-wrapper .wrapper p{
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 17px;
+    /* font-weight: bold; */
     /* margin: 10px 0px; */
     width: 100%;
     border-bottom: 1px solid #ebebeb;
     padding: 10px 0px;
     padding-right: 20%;
     line-height: 150%;
+}
+
+.health-packages-wrapper .wrapper p span{
+    font-size: 14px;
+    color: #666666;
+    line-height: 150%;
+    display: block;
+    margin-top: 5px;
 }
 
 .health-packages-wrapper .wrapper .ctas .buy-now{
@@ -272,4 +319,84 @@ header{
 
 .health-packages-wrapper button.slick-prev.slick-arrow{
     transform: rotate(135deg);
+}
+
+.health-packages-wrapper .wrapper .text-wrapper{
+    position: absolute;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.home-clients{
+    margin: 60px 0px 0px;
+}
+
+.home-clients .home-title{
+    margin: 40px 0px 40px;
+}
+
+.home-clients .home-clients-testimonials .wrapper{
+    background: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.home-clients .home-clients-testimonials .wrapper p{
+    color: #666666;
+    font-size: 15px;
+    line-height: 170%;
+    margin-bottom: 5px;
+}
+
+
+.home-clients .home-clients-testimonials .wrapper .person .img-wrapper{
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.home-clients .home-clients-testimonials .wrapper .person .img-wrapper img{
+    height: 100%;
+    object-fit: cover;  
+}
+.home-clients .home-clients-testimonials .wrapper .person .name-wrapper{
+    float: right;
+}
+
+.home-clients .home-clients-testimonials .wrapper .person .name-wrapper p{
+    line-height: 120%;
+    margin: 0px;
+    margin-top: 11px;
+    margin-left: 10px;
+
+}
+
+.home-clients .home-clients-testimonials .wrapper .person .name-wrapper span{
+    display: block;
+}
+
+.home-clients .home-clients-testimonials .wrapper .person{
+    position: absolute;
+    bottom: -47px;
+    left: 30px;
+    display: inline-block;
+}
+
+.home-awards .wrapper{
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.home-awards .wrapper img{
+    height: 150px;
+}
+
+.home-awards .home-title{
+    margin: 60px 0px 70px;
+}
+
+.home-awards .wrapper p{
+    margin-top: 20px;
 }

@@ -1,5 +1,5 @@
 $(function(){
-    $('.health-packages-wrapper .row').slick({
+    $('.slick-slider-wrapper').slick({
         slidesToShow: 4,
         slidesToScroll: 1
       });
